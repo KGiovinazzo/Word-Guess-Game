@@ -5,88 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <title>Title</title>
 </head>
 
 <body>
+    <div class="container">
+        <h1>Psychic Game!</h1>
+        <h3>Hit any letter A-Z and see if you match the computer's guess.</h3>
+        <p id="win">Wins:</p>
+        <p id="loss">Losses:</p>
+        <p id="left">Guesses Left:</p>
+        
+    </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
+    <script> src="./assets/Javascript/game.js" </script>
+</body>
 
-        // Create all my variables for game logic
-
-        var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",];
-
-        //wins (number)
-
-        var win = 0;
-
-        //losses (number)
-
-        var loss = 0;
-
-        // guesses that are left (number)
-
-        var left = 0;
-
-        //letters already guessed (array)
-
-        var guess = 0;
-
-        //computer choices bank (array of the alphebet)
-
-        for (var i = 0; i > letters.length; i++) {
-
-
-        }
-
-        // computer guess variable
-
-
-
-        //create a function to start/reset the game
-
-        //reset important game variables
-          // How many guessesLeft back to 10
-
-          // reset the lettersAlreadyGuessed array
-
-           //write some info to the page indicating a new game has started(optional)
-          //randomly choose computer guess
-
-
-
-        //   Create onkeyup event 
-
-         //on every key press you want to push the user guess into the letters guessed array
-
-
-         //THIS IS YOUR WIN CONDITION!!!
-          // Start if statements for your win
-
-          // increase wins by 1
-
-
-        // start a new game using the function you wrote above
-
-        // update your HTML here / wins section
-
-        // else!
-        //you also want to decrement your guessesLeft variable and update HTML
-
-
-        //THIS IS YOUR LOSS CONDITION
-          //since you are decrementing the guessesLeft on every keypress your loss condition is here
-
-           //increment losses
-
-           // start a new game using the function you wrote above
-
-           // update your HTML here / wins section
-
-
-           //run new game function,  you start your newgame function or restart whatever you called it here should be the last thing on the page so every time a user logs in it will start a new game.  Let me know if you need help we can always do a zoom session and i can walk you through if you get stuck
-    
-</body >
-</html >
+</html>
