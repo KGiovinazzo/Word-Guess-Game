@@ -1,8 +1,6 @@
 
 // Create all my variables for game logic
 
-console.log("this Hit");
-
 //wins (number)
 
 var win = 0;
@@ -45,6 +43,7 @@ function newGame() {
     var randomCompChoice = [Math.floor(Math.random() * computerChoice.length)];
 
     computerGuess = computerChoice[randomCompChoice]
+ console.log(computerGuess);
 
 
 }
@@ -69,14 +68,15 @@ document.onkeyup = function (event) {
         // start a new game using the function you wrote above
         newGame();
         // update your HTML here / wins section
-
-        // make id = win
+        $("#win").text(win);
+        
 
         // else!
         //you also want to decrement your guessesLeft variable and update HTML
     } else {
         left--;
         // print to page
+        $("#left").text(left);
 
     }
 
@@ -91,9 +91,8 @@ document.onkeyup = function (event) {
        
 
         // update your HTML here / wins section
-
+        $("#loss").text(loss);
         // make id = loss
-
     } 
 
 }
